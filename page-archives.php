@@ -49,7 +49,7 @@ get_header(); ?>
             wp_tag_cloud(
                 array(
                     'smallest' =>1,
-                    'largest' =>1.5,
+                    'largest' =>1.5 ,
                     'unit' =>'rem',
                     'format' =>'list'
 
