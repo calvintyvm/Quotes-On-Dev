@@ -4,6 +4,78 @@
 
 /* Posts and pages */
 
+body{
+	background-color: $color-background;
+	font-family:"Exo";
+	font-weight:lighter;
+}
+.site{
+
+}
+
+
+
+.site-header{
+	margin-top:2.5em;
+.logo{
+	width:700px;
+	margin: 0 auto;
+
+
+
+}
+}
+
+.entry-content{
+	width:650px;
+	color:$body-color;
+	
+
+	
+	p{
+		font-size:2.5rem;
+		line-height:1$font__line-height-body;
+
+
+	}
+}
+
+.entry-meta{
+	display:flex;
+	h2{
+
+	
+	font-size:1rem;
+	}
+	.entry-title{
+		color:$body-color;
+	}
+	.source{
+		display:flex;
+		align-items:center;
+
+		a{
+			text-decoration: none;
+			color:$source-link;
+		}
+	}
+}
+
+button{
+	background-color: #222;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    color: #0c0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: .75rem 2.25rem;
+}
+
+
+
+
+
 .sticky {
 	display: block;
 }
@@ -31,3 +103,4 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+

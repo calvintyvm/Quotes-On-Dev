@@ -14,12 +14,13 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
       url: '/project5/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
           success: function ( data ) {
 
-            $(".entry-title").empty();
-            $(".entry-title").append(data[0].title.rendered);
             $(".entry-content").empty();
             $(".entry-content").append(data[0].content.rendered);
+            $(".entry-title").empty();
+            $(".entry-title").append(data[0].title.rendered);
+
             $(".source").empty();
-            $(".source").append('<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
+            $(".source").append("," + '<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
 
     }});
 
