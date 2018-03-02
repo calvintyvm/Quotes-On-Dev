@@ -42,6 +42,7 @@ body {
 	  justify-content: center;
 	  .entry-content {
 		font-size: 1.5rem;
+		width:650px;
 
 		p {
 		  margin-bottom: 0px;
@@ -74,8 +75,8 @@ body {
 		width: 50%;
 		align-items: center;
 		.entry-title {
-		  font-size: 1rem;
-		  font-weight: normal;
+
+		  font-weight: lighter;
 		  span {
 			margin-left: 10px;
 		  }
@@ -117,18 +118,27 @@ body {
 	h2{
 
 	
-	font-size:1rem;
+		
 	}
 	.entry-title{
 		color:$body-color;
+		font-size:1.25rem;
+		font-weight:400;
+
 	}
 	.source{
 		// display:flex;
 		// align-items:center;
+		color:white;
+		font-size:1.25rem;
 
+
+		
 		a{
 			text-decoration: none;
 			color:$source-link;
+			font-size:1.25rem;
+			font-style:italic;
 		}
 	}
 }
@@ -143,14 +153,15 @@ button{
     font-size: 1rem;
     font-weight: 700;
     line-height: 1;
-	padding: .75rem 2.25rem;
+	padding: 1rem 5.25rem;
 	margin-top:50px;
 	
 
 }
 
 .button-container{
-	text-align:center;
+	text-align:left;
+	margin-left:214px;
 }
 
 
@@ -159,8 +170,18 @@ button{
 
 	display:flex;
 	align-items:center;
-	justify-content:flex-end;
-	margin-top:50px;
+	justify-content:flex-start;
+	margin-top:100px;
+	margin-left:125px;
+
+	a{
+		text-decoration: none;
+		color:$source-link;
+	}
+	p{
+		color:white;
+	}
+
 
 
 
@@ -169,11 +190,13 @@ button{
 		display:flex;
 		flex-direction:row;
 		justify-content: space-between;
-		width:500px;
+		width:300px;
+	
 		
 		li{
 			padding-right:10px;
 			border-right:1px solid white;
+			
 		}
 
 
@@ -181,6 +204,7 @@ button{
 	
 p{
 	margin-top:0;
+	margin-left:10px;
 }
 }
 

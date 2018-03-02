@@ -614,7 +614,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
   .home .post .entry-content {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    width: 650px; }
     .home .post .entry-content p {
       margin-bottom: 0px;
       position: relative; }
@@ -651,8 +652,7 @@ body {
         -ms-flex-align: center;
             align-items: center; }
     .home .post .entry-meta .entry-title {
-      font-size: 1rem;
-      font-weight: normal; }
+      font-weight: lighter; }
       .home .post .entry-meta .entry-title span {
         margin-left: 10px; }
 
@@ -673,13 +673,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .entry-meta h2 {
-    font-size: 1rem; }
   .entry-meta .entry-title {
-    color: #fff; }
-  .entry-meta .source a {
-    text-decoration: none;
-    color: #0c0; }
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400; }
+  .entry-meta .source {
+    color: white;
+    font-size: 1.25rem; }
+    .entry-meta .source a {
+      text-decoration: none;
+      color: #0c0;
+      font-size: 1.25rem;
+      font-style: italic; }
 
 button {
   background-color: #222;
@@ -689,11 +694,12 @@ button {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
-  padding: .75rem 2.25rem;
+  padding: 1rem 5.25rem;
   margin-top: 50px; }
 
 .button-container {
-  text-align: center; }
+  text-align: left;
+  margin-left: 214px; }
 
 .site-info {
   display: -webkit-box;
@@ -702,10 +708,16 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 50px; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 100px;
+  margin-left: 125px; }
+  .site-info a {
+    text-decoration: none;
+    color: #0c0; }
+  .site-info p {
+    color: white; }
   .site-info ul {
     list-style-type: none;
     display: -webkit-box;
@@ -718,12 +730,13 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 500px; }
+    width: 300px; }
     .site-info ul li {
       padding-right: 10px;
       border-right: 1px solid white; }
   .site-info p {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-left: 10px; }
 
 .sticky {
   display: block; }

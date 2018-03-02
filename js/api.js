@@ -25,7 +25,7 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").empty();
             $(".entry-title").append("&mdash;" + data[0].title.rendered + ",");
             $(".source").empty();
-            $(".source").append('<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
+            $(".source").append(' ' + '<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
 
             } else if(quoteSource.length > 0 ){
             $(".entry-content").empty();
@@ -33,7 +33,7 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").empty();
             $(".entry-title").append("&mdash;" + data[0].title.rendered + ",");
             $(".source").empty();
-            $(".source").append(data[0]._qod_quote_source);
+            $(".source").append(' ' + data[0]._qod_quote_source);
 
             }else{
             $(".entry-content").empty();
