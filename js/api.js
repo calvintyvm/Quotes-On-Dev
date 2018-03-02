@@ -17,31 +17,34 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
 
             var quoteUrl = data[0]._qod_quote_source_url;
             var quoteSource = data[0]._qod_quote_source;
+            var titleRendered = data[0].title.rendered;
+            var contentRendered = data[0].content.rendered;
 
 
             if(quoteUrl.length > 0){
             $(".entry-content").empty();
-            $(".entry-content").append(data[0].content.rendered);
+            $(".entry-content").append(contentRendered);
             $(".entry-title").empty();
-            $(".entry-title").append("&mdash;" + data[0].title.rendered + ",");
+            $(".entry-title").append("&mdash;" + titleRendered + ",");
             $(".source").empty();
-            $(".source").append(' ' + '<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
+            $(".source").append(' ' + '<a href="' + quoteUrl + '">' + quoteSource + '</a>');
 
             } else if(quoteSource.length > 0 ){
             $(".entry-content").empty();
-            $(".entry-content").append(data[0].content.rendered);
+            $(".entry-content").append(contentRendered);
             $(".entry-title").empty();
-            $(".entry-title").append("&mdash;" + data[0].title.rendered + ",");
+            $(".entry-title").append("&mdash;" + titleRendered + ",");
             $(".source").empty();
-            $(".source").append(' ' + data[0]._qod_quote_source);
+            $(".source").append(' ' + quoteSource);
 
             }else{
             $(".entry-content").empty();
-            $(".entry-content").append(data[0].content.rendered);
+            $(".entry-content").append(contentRendered);
             $(".entry-title").empty();
-            $(".entry-title").append("&mdash;" + data[0].title.rendered);
+            $(".entry-title").append("&mdash;" + titleRendered);
             $(".source").empty();
-            $(".source").append(data[0]._qod_quote_source);
+            $(".source").append(quoteSource);
+            
 
             }
             
@@ -52,6 +55,8 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
 
   } );
 
+
+  
 
   // submit a new quote from the form, e.g. button .on click form .submit
   // post request wp-json/wp/v2/posts
