@@ -760,6 +760,16 @@ button {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.page-template-default article {
+  margin-top: 100px;
+  margin-left: 200px; }
+  .page-template-default article .entry-content p {
+    line-height: 1.5;
+    font-size: 1rem; }
+
+.page-template-default .site-info {
+  margin-left: 110px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

@@ -88,6 +88,9 @@ body {
 
 
 
+
+
+
 .site-header{
 	margin-top:2.5em;
 .logo{
@@ -240,3 +243,40 @@ p{
 	margin: 0 0 $base__space-unit;
 }
 
+
+
+.page-template-default{
+	
+
+article{
+
+
+	margin-top:100px;
+	margin-left:200px;
+	.entry-content{
+
+
+		p{
+			
+
+		line-height:1.5;
+		font-size:1rem;
+
+		}
+
+
+
+
+
+
+
+
+	}
+	.entry-title{
+
+	}
+  }
+  .site-info{
+	  margin-left:110px;
+  }
+}
