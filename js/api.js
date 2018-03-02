@@ -71,11 +71,22 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
 
     }});
 
+
+
   } );
 
 
-  
+  $( "form" ).submit(function( event ) {
+    $(":input, :textarea").each(function() {
+      if($(this).val() === "")
+       alert("Empty Fields!!");
+       else{
+         
+       }
+   });
 
+  });
+  
   // submit a new quote from the form, e.g. button .on click form .submit
   // post request wp-json/wp/v2/posts
   // before send nonce authentication, it's in the slides from wp ajax lesson
