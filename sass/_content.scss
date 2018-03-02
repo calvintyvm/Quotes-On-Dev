@@ -156,8 +156,13 @@ button{
 
 .site-info{
 
+
 	display:flex;
 	align-items:center;
+	justify-content:flex-end;
+	margin-top:50px;
+
+
 
 	ul{
 		list-style-type: none;
@@ -166,9 +171,17 @@ button{
 		justify-content: space-between;
 		width:500px;
 		
+		li{
+			padding-right:10px;
+			border-right:1px solid white;
+		}
+
 
 	}
-
+	
+p{
+	margin-top:0;
+}
 }
 
 
