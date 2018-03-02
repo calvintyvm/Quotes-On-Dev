@@ -19,6 +19,10 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             var quoteSource = data[0]._qod_quote_source;
             var titleRendered = data[0].title.rendered;
             var contentRendered = data[0].content.rendered;
+            var location1 = location.href;
+         
+
+            var pages = "";
 
 
             if(quoteUrl.length > 0){
@@ -28,6 +32,11 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").append("&mdash;" + titleRendered + ",");
             $(".source").empty();
             $(".source").append(' ' + '<a href="' + quoteUrl + '">' + quoteSource + '</a>');
+            history.pushState(pages,"random",titleRendered);
+            // history.replaceState(location1.replace('%20', '-'));
+            
+          
+
 
             } else if(quoteSource.length > 0 ){
             $(".entry-content").empty();
@@ -36,6 +45,11 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").append("&mdash;" + titleRendered + ",");
             $(".source").empty();
             $(".source").append(' ' + quoteSource);
+            history.pushState(pages,"random",titleRendered);
+            // history.replaceState(location1.replace('%20', '-'));
+          
+            
+       
 
             }else{
             $(".entry-content").empty();
@@ -44,6 +58,10 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").append("&mdash;" + titleRendered);
             $(".source").empty();
             $(".source").append(quoteSource);
+            history.pushState(pages,"random",titleRendered);
+            // history.replaceState(location1.replace('%20', '-'));
+            
+           
             
 
             }

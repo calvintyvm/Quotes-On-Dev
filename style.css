@@ -760,15 +760,39 @@ button {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.page-template-default .entry-title {
+  color: #fff; }
+
 .page-template-default article {
   margin-top: 100px;
   margin-left: 200px; }
+  .page-template-default article a {
+    text-decoration: none;
+    color: #0c0; }
   .page-template-default article .entry-content p {
     line-height: 1.5;
     font-size: 1rem; }
 
 .page-template-default .site-info {
   margin-left: 110px; }
+
+.page-template-default .entry-header :before {
+  color: #00cc00;
+  content: "\f10d";
+  font-family: FontAwesome;
+  left: 90px;
+  position: absolute;
+  top: 250px;
+  font-size: 125px; }
+
+.page-template-default .entry-header :after {
+  color: #00cc00;
+  content: "\f10e";
+  font-family: FontAwesome;
+  right: 110px;
+  position: absolute;
+  top: 250px;
+  font-size: 125px; }
 
 /*--------------------------------------------------------------
 # Media

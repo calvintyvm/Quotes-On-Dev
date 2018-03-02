@@ -247,8 +247,15 @@ p{
 
 .page-template-default{
 	
+	.entry-title{
+		color:$body-color;
+	}
 
 article{
+	a{
+		text-decoration:none;
+		color:$source-link;
+	}
 
 
 	margin-top:100px;
@@ -278,5 +285,28 @@ article{
   }
   .site-info{
 	  margin-left:110px;
+  }
+
+
+  .entry-header{
+	:before {
+		color: #00cc00;
+		content: "\f10d";
+		font-family: FontAwesome;
+		left: 90px;
+		position: absolute;
+		top: 250px;
+
+		font-size: 125px;
+	  }
+	  :after {
+		color: #00cc00;
+		content: "\f10e";
+		font-family: FontAwesome;
+		right: 110px;
+		position: absolute;
+		top: 250px;
+		font-size: 125px;
+	  }
   }
 }
