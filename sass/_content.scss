@@ -4,14 +4,86 @@
 
 /* Posts and pages */
 
-body{
+
+.site{
+width:1080px;
+margin:0 auto;
+}
+
+article{
+
+
+
+
+}
+
+
+body {
 	background-color: $color-background;
 	font-family:"Exo";
 	font-weight:lighter;
-}
-.site{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100vw;
+  }
+  .logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-}
+  }
+  /*Front-Page*/
+  .home {
+	.post {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  .entry-content {
+		font-size: 1.5rem;
+
+		p {
+		  margin-bottom: 0px;
+		  position: relative;
+		}
+		:before {
+		  color: #00cc00;
+		  content: "\f10d";
+		  font-family: FontAwesome;
+		  left: -175px;
+		  position: absolute;
+		  top: 0;
+		  font-size: 125px;
+		}
+		:after {
+		  color: #00cc00;
+		  content: "\f10e";
+		  font-family: FontAwesome;
+		  right: -130px;
+		  position: absolute;
+		  top: 0;
+		  font-size: 125px;
+		}
+	  }
+	  .entry-meta {
+		font-weight: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		width: 50%;
+		align-items: center;
+		.entry-title {
+		  font-size: 1rem;
+		  font-weight: normal;
+		  span {
+			margin-left: 10px;
+		  }
+		}
+	  }
+	}
+
+  }
 
 
 
@@ -51,8 +123,8 @@ body{
 		color:$body-color;
 	}
 	.source{
-		display:flex;
-		align-items:center;
+		// display:flex;
+		// align-items:center;
 
 		a{
 			text-decoration: none;
@@ -60,6 +132,8 @@ body{
 		}
 	}
 }
+
+
 
 button{
 	background-color: #222;
@@ -69,7 +143,32 @@ button{
     font-size: 1rem;
     font-weight: 700;
     line-height: 1;
-    padding: .75rem 2.25rem;
+	padding: .75rem 2.25rem;
+	margin-top:50px;
+	
+
+}
+
+.button-container{
+	text-align:center;
+}
+
+
+.site-info{
+
+	display:flex;
+	align-items:center;
+
+	ul{
+		list-style-type: none;
+		display:flex;
+		flex-direction:row;
+		justify-content: space-between;
+		width:500px;
+		
+
+	}
+
 }
 
 

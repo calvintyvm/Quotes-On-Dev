@@ -35,7 +35,7 @@
 		<span class="source">, <?php echo $source; ?> </span>
 
 	<?php else: ?>
-		<span class "source"></span>	
+		<span class="source"></span>	
 
 	<?php endif; ?>
 
@@ -48,7 +48,9 @@
 
 
 <?php if(is_home() || is_single()): ?>
+	<div class="button-container">
 	<button type="button" id="new-quote-button">Show me another!</button>
+	</div>
 
 
 
