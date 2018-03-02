@@ -15,18 +15,8 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
           success: function ( data ) {
 
 
-            // var content = data[0].content.rendered;
             var quoteUrl = data[0]._qod_quote_source_url;
-            // var quoteText = data[0].qod_quote_source;
-            // var title = data[0].title.rendered;
-
-            // var template = '';
-            // template += '<div class="entry-content"></div>';
-            // template += '<div class="entry-title"></div> ';
-            // template += '<div class=".source"></div>';
-
-            // console.log(template);
-
+            var quoteSource = data[0]._qod_quote_source;
 
 
             if(quoteUrl.length > 0){
@@ -35,9 +25,17 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").empty();
             $(".entry-title").append("&mdash;" + data[0].title.rendered + ",");
             $(".source").empty();
-            $(".source").append("," + '<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
+            $(".source").append('<a href="' + data[0]._qod_quote_source_url + '">' + data[0]._qod_quote_source + '</a>');
 
-            } else {
+            } else if(quoteSource.length > 0 ){
+            $(".entry-content").empty();
+            $(".entry-content").append(data[0].content.rendered);
+            $(".entry-title").empty();
+            $(".entry-title").append("&mdash;" + data[0].title.rendered + ",");
+            $(".source").empty();
+            $(".source").append(data[0]._qod_quote_source);
+
+            }else{
             $(".entry-content").empty();
             $(".entry-content").append(data[0].content.rendered);
             $(".entry-title").empty();
@@ -46,7 +44,6 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".source").append(data[0]._qod_quote_source);
 
             }
-
             
             
 
