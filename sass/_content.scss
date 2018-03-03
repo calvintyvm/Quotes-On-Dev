@@ -34,7 +34,7 @@ body {
 
   }
   /*Front-Page*/
-  .home,.single-post{
+  .home,.single-post,.page-{
 	.post {
 	@include flex-center;
 	  flex-direction: column;

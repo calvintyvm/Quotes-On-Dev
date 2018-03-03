@@ -481,9 +481,9 @@ FOOTER
 a {
   color: royalblue; }
   a:visited {
-    color: purple; }
+    color: #0c0; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #006600; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -653,7 +653,7 @@ body {
           justify-content: center; }
 
 /*Front-Page*/
-.home .post, .single-post .post {
+.home .post, .single-post .post, .page- .post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,13 +667,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .home .post .entry-content, .single-post .post .entry-content {
+  .home .post .entry-content, .single-post .post .entry-content, .page- .post .entry-content {
     font-size: 1.5rem;
     width: 650px; }
-    .home .post .entry-content p, .single-post .post .entry-content p {
+    .home .post .entry-content p, .single-post .post .entry-content p, .page- .post .entry-content p {
       margin-bottom: 0px;
       position: relative; }
-    .home .post .entry-content :before, .single-post .post .entry-content :before {
+    .home .post .entry-content :before, .single-post .post .entry-content :before, .page- .post .entry-content :before {
       color: #0c0;
       content: "\f10d";
       font-family: FontAwesome;
@@ -681,7 +681,7 @@ body {
       position: absolute;
       top: 0;
       font-size: 125px; }
-    .home .post .entry-content :after, .single-post .post .entry-content :after {
+    .home .post .entry-content :after, .single-post .post .entry-content :after, .page- .post .entry-content :after {
       color: #0c0;
       content: "\f10e";
       font-family: FontAwesome;
@@ -689,7 +689,7 @@ body {
       position: absolute;
       top: 0;
       font-size: 125px; }
-  .home .post .entry-meta, .single-post .post .entry-meta {
+  .home .post .entry-meta, .single-post .post .entry-meta, .page- .post .entry-meta {
     font-weight: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -705,9 +705,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .home .post .entry-meta .entry-title, .single-post .post .entry-meta .entry-title {
+    .home .post .entry-meta .entry-title, .single-post .post .entry-meta .entry-title, .page- .post .entry-meta .entry-title {
       font-weight: lighter; }
-      .home .post .entry-meta .entry-title span, .single-post .post .entry-meta .entry-title span {
+      .home .post .entry-meta .entry-title span, .single-post .post .entry-meta .entry-title span, .page- .post .entry-meta .entry-title span {
         margin-left: 10px; }
 
 .entry-content {
