@@ -25,19 +25,19 @@ get_header(); ?>
 
         <form name ="quoteForm" id="quote-submission-form">
         
-          <div>
+          <div class ="input-container">
             <label for="quote-author">Author of Quote </label>
             <input type ="text" name="quote_author" id="quote-author">
           </div>
-          <div>
+          <div class ="input-container">
             <label for="quote-content">Quote</label>
             <textarea name="quote_content" id="quote-content" cols="20" rows="3"></textarea>
          </div>
-         <div>
+         <div class ="input-container">
             <label for="quote-source">Where did you find this Quote?</label>
             <input type="text" name="quote_source" id="quote-source">
         </div>
-        <div>
+        <div class ="input-container">
             <label for="quote-source-url">Provide the URL of the quote source, if available.</label>
             <input type="url" name="quote_source_url" id="quote-sourceurl">
         </div>
