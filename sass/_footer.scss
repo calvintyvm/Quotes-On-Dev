@@ -1,0 +1,48 @@
+
+
+/*--------------------------------------------------------------
+FOOTER 
+--------------------------------------------------------------*/
+
+.site-info{
+
+
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	margin-top:100px;
+	margin-left:125px;
+
+	a{
+		text-decoration: none;
+		color:$source-link;
+	}
+	p{
+		color:white;
+	}
+
+
+
+
+	ul{
+		list-style-type: none;
+		display:flex;
+		flex-direction:row;
+		justify-content: space-between;
+		width:300px;
+	
+		
+		li{
+			padding-right:10px;
+			border-right:1px solid white;
+			
+		}
+
+
+	}
+	
+p{
+	margin-top:0;
+	margin-left:10px;
+}
+}

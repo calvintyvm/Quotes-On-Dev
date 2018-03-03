@@ -8,8 +8,12 @@
 
 //submit a new quote with the form using jquery 
 
+var lastPage = '';
+
 $( '#new-quote-button' ).on( 'click', function ( s ) {
+  
     s.preventDefault();
+    lastPage = document.URL;
     $.ajax({
       url: '/project5/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
           success: function ( data ) {
@@ -18,12 +22,8 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             var quoteUrl = data[0]._qod_quote_source_url;
             var quoteSource = data[0]._qod_quote_source;
             var titleRendered = data[0].title.rendered;
+            var titleSlug = data[0].slug;
             var contentRendered = data[0].content.rendered;
-            var location1 = location.href;
-         
-
-            var pages = "";
-
 
             if(quoteUrl.length > 0){
             $(".entry-content").empty();
@@ -32,11 +32,7 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").append("&mdash;" + titleRendered + ",");
             $(".source").empty();
             $(".source").append(' ' + '<a href="' + quoteUrl + '">' + quoteSource + '</a>');
-            history.pushState(pages,"random",titleRendered);
-            // history.replaceState(location1.replace('%20', '-'));
-            
-          
-
+            history.pushState(null,null,titleSlug);
 
             } else if(quoteSource.length > 0 ){
             $(".entry-content").empty();
@@ -45,11 +41,7 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").append("&mdash;" + titleRendered + ",");
             $(".source").empty();
             $(".source").append(' ' + quoteSource);
-            history.pushState(pages,"random",titleRendered);
-            // history.replaceState(location1.replace('%20', '-'));
-          
-            
-       
+            history.pushState(null,null,titleSlug);
 
             }else{
             $(".entry-content").empty();
@@ -58,34 +50,48 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
             $(".entry-title").append("&mdash;" + titleRendered);
             $(".source").empty();
             $(".source").append(quoteSource);
-            history.pushState(pages,"random",titleRendered);
-            // history.replaceState(location1.replace('%20', '-'));
+            history.pushState(null,null,titleSlug);
+              //history popstate
             
-           
-            
-
             }
-            
-            
-
-
     }});
-
-
 
   } );
 
-
-  $( "form" ).submit(function( event ) {
-    $(":input, :textarea").each(function() {
-      if($(this).val() === "")
-       alert("Empty Fields!!");
-       else{
-         
-       }
-   });
-
+  $(window).on('popstate', function() {
+    console.log("popstate fired!");
+    if (window.location.hash.indexOf('qm-overview') === 1) {
+      return false;
+    }else {
+      window.location.replace(lastPage);
+    }
   });
+
+
+  // $('#submit-quote').on('click', function(e){
+  //   e.preventDefault();
+
+    
+  //   // get the value of the fields to send
+
+  //   // ajax post request
+
+  //   // data to send will have the title, content, _qod_source, _qod_source_url
+ 
+
+
+  // });
+
+  // $( "form" ).submit(function( event ) {
+  //   event.preventDefault();
+  //   $(":input").each(function() {
+  //     if($(this).val() === "")
+  //      alert("Empty Fields!!");
+  //      else{
+         
+  //      }
+  //  });
+  // });
   
   // submit a new quote from the form, e.g. button .on click form .submit
   // post request wp-json/wp/v2/posts
