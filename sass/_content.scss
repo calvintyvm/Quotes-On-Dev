@@ -6,6 +6,7 @@
 
 
 .site{
+
 width:1080px;
 margin:0 auto;
 }
@@ -25,26 +26,21 @@ body {
 	background-color: $color-background;
 	font-family:"Exo";
 	font-weight:lighter;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	max-width: 100vw;
+	@include flex-center;
   }
   .logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex-center;
 
   }
   /*Front-Page*/
-  .home {
+  .home,.single-post{
 	.post {
-	  display: flex;
+	@include flex-center;
 	  flex-direction: column;
-	  align-items: center;
-	  justify-content: center;
+
 	  .entry-content {
-		font-size: 1.5rem;
+		font-size: 1.5rem; 
 		width:650px;
 
 		p {
@@ -52,7 +48,7 @@ body {
 		  position: relative;
 		}
 		:before {
-		  color: #00cc00;
+		  color: $source-link;
 		  content: "\f10d";
 		  font-family: FontAwesome;
 		  left: -175px;
@@ -61,7 +57,7 @@ body {
 		  font-size: 125px;
 		}
 		:after {
-		  color: #00cc00;
+		  color: $source-link;
 		  content: "\f10e";
 		  font-family: FontAwesome;
 		  right: -130px;
@@ -119,7 +115,7 @@ body {
 	}
 	.entry-title{
 		color:$body-color;
-		font-size:1.25rem;
+		font-size:$font-size-main;
 		font-weight:400;
 
 	}
@@ -127,14 +123,14 @@ body {
 		// display:flex;
 		// align-items:center;
 		color:white;
-		font-size:1.25rem;
+		font-size:$font-size-main;
 
 
 		
 		a{
 			text-decoration: none;
 			color:$source-link;
-			font-size:1.25rem;
+			font-size:$font-size-main;
 			font-style:italic;
 		}
 	}
@@ -143,10 +139,10 @@ body {
 
 
 button{
-	background-color: #222;
-    border: 2px solid #0c0;
+	background-color: $color-background;
+    border: 2px solid $source-link;
     border-radius: 3px;
-    color: #0c0;
+    color: $source-link;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1;
@@ -208,7 +204,7 @@ article, section{
 
 	ul{
 		list-style-type: none;
-		font-size:1.25rem;
+		font-size:$font-size-main;
 		margin-left:0;
 		padding-left:0;
 		display:flex;
@@ -260,7 +256,7 @@ article, section{
 
   .entry-header{
 	:before {
-		color: #00cc00;
+		color: $source-link;
 		content: "\f10d";
 		font-family: FontAwesome;
 		left: 90px;
@@ -270,7 +266,7 @@ article, section{
 		font-size: 125px;
 	  }
 	  :after {
-		color: #00cc00;
+		color: $source-link;
 		content: "\f10e";
 		font-family: FontAwesome;
 		right: 110px;
