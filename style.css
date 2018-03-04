@@ -519,6 +519,45 @@ FOOTER
   .input-container #quote-sourceurl {
     margin-bottom: 15px; }
 
+article, section {
+  margin-top: 100px;
+  margin-left: 200px; }
+  article .site-main, section .site-main {
+    margin-left: 200px;
+    margin-top: 100px; }
+  article ul, section ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+    margin-left: 0;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 650px;
+    line-height: 40px; }
+    article ul li, section ul li {
+      margin-right: 15px; }
+  article h1, article h2, section h1, section h2 {
+    color: #fff; }
+  article a, section a {
+    text-decoration: none;
+    color: #0c0; }
+  article a:hover, section a:hover {
+    color: #006600;
+    border-color: #006600; }
+  article .entry-content p, section .entry-content p {
+    line-height: 1.5;
+    font-size: 1rem; }
+
+.page-id-113 .site-main {
+  margin-left: 0px; }
+
+.page-id-107 article {
+  margin-left: 200px;
+  margin-top: 50px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -714,8 +753,10 @@ body {
           flex-direction: column; }
   .home .post .entry-content, .single-post .post .entry-content, .page .post .entry-content {
     font-size: 1.5rem;
-    width: 650px; }
+    width: 650px;
+    margin-top: 50px; }
     .home .post .entry-content p, .single-post .post .entry-content p, .page .post .entry-content p {
+      font-size: 2rem;
       margin-bottom: 0px;
       position: relative; }
     .home .post .entry-content :before, .single-post .post .entry-content :before, .page .post .entry-content :before {
@@ -803,32 +844,6 @@ button {
 
 .page-template-default .entry-title {
   color: #fff; }
-
-.page-template-default article, .page-template-default section {
-  margin-top: 100px;
-  margin-left: 200px; }
-  .page-template-default article ul, .page-template-default section ul {
-    list-style-type: none;
-    font-size: 1.25rem;
-    margin-left: 0;
-    padding-left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 650px;
-    line-height: 40px; }
-    .page-template-default article ul li, .page-template-default section ul li {
-      margin-right: 15px; }
-  .page-template-default article h1, .page-template-default article h2, .page-template-default section h1, .page-template-default section h2 {
-    color: #fff; }
-  .page-template-default article a, .page-template-default section a {
-    text-decoration: none;
-    color: #0c0; }
-  .page-template-default article .entry-content p, .page-template-default section .entry-content p {
-    line-height: 1.5;
-    font-size: 1rem; }
 
 .page-template-default .entry-header :before {
   color: #0c0;
