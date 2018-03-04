@@ -797,6 +797,8 @@ body {
       color: #0c0;
       font-size: 1.25rem;
       font-style: italic; }
+    .entry-meta .source a:hover {
+      color: #006600; }
 
 .entry-content {
   width: 650px;
