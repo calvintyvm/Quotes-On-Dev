@@ -3,6 +3,22 @@
 HEADER 
 --------------------------------------------------------------*/
 
+@media(min-width:620px){
+
+.site-header{
+	margin-top:2.5em;
+.logo{
+	width:500px;
+	margin-left:20px;
+
+
+
+}
+}
+}
+
+
+
 @include desktop{
 .site-header{
 	margin-top:2.5em;
@@ -15,3 +31,4 @@ HEADER
 }
 }
 }
+

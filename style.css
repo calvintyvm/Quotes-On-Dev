@@ -428,6 +428,13 @@ textarea {
 /*--------------------------------------------------------------
 HEADER 
 --------------------------------------------------------------*/
+@media (min-width: 620px) {
+  .site-header {
+    margin-top: 2.5em; }
+    .site-header .logo {
+      width: 500px;
+      margin-left: 20px; } }
+
 @media (min-width: 1080px) {
   .site-header {
     margin-top: 2.5em; }
@@ -438,6 +445,46 @@ HEADER
 /*--------------------------------------------------------------
 FOOTER 
 --------------------------------------------------------------*/
+@media (min-width: 620px) {
+  .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 100px;
+    width: 700px; }
+    .site-info a {
+      text-decoration: none;
+      color: #0c0; }
+    .site-info p {
+      color: white; }
+    .site-info ul {
+      list-style-type: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 300px;
+      margin: 0; }
+      .site-info ul li {
+        padding-right: 10px;
+        border-right: 1px solid white; }
+    .site-info p {
+      margin-top: 0;
+      margin-left: 10px;
+      margin-bottom: 0; } }
+
 @media (min-width: 1080px) {
   .site-info {
     display: -webkit-box;
@@ -468,13 +515,15 @@ FOOTER
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      width: 300px; }
+      width: 300px;
+      margin: 0 0 1.5rem 3rem; }
       .site-info ul li {
         padding-right: 10px;
         border-right: 1px solid white; }
     .site-info p {
       margin-top: 0;
-      margin-left: 10px; } }
+      margin-left: 10px;
+      margin-bottom: 1.5rem; } }
 
 @media (min-width: 1080px) {
   #submit-quote {
@@ -702,6 +751,40 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.button-container {
+  margin-left: 50px; }
+
+@media (min-width: 620px) {
+  body {
+    background-color: #222;
+    font-family: "Exo"; }
+    body article {
+      margin-left: 50px;
+      margin-top: 50px;
+      color: #fff; }
+      body article .entry-content p {
+        font-size: 1.5rem;
+        font-weight: lighter; }
+      body article .entry-meta .entry-title {
+        display: inline;
+        font-size: 1.3rem; }
+      body article .entry-meta .source {
+        font-size: 1.3rem;
+        font-weight: lighter;
+        font-style: italic; }
+      body article .entry-meta h2 {
+        font-weight: lighter; }
+    body button {
+      background-color: #222;
+      border: 2px solid #0c0;
+      border-radius: 3px;
+      color: #0c0;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1;
+      padding: 1rem 5.25rem;
+      margin-top: 50px; } }
+
 @media (min-width: 1080px) {
   .site {
     width: 1080px;
@@ -849,9 +932,6 @@ a {
     position: absolute;
     top: 250px;
     font-size: 125px; } }
-
-@media (min-width: 620px) {
-  background-color: red; }
 
 /*--------------------------------------------------------------
 # Media

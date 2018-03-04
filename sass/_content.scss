@@ -6,6 +6,74 @@
 
 
 
+
+.button-container{
+	margin-left:50px;
+}
+
+
+@media(min-width:620px){
+body{
+background-color:$color-background;
+font-family:"Exo";
+
+article{
+	margin-left:50px;
+	margin-top:50px;
+	color:$body-color;
+
+.entry-content{
+	p{
+		font-size:1.5rem;
+		font-weight: lighter;
+	}
+
+
+}
+.entry-meta{
+	.entry-title{
+		display:inline;
+		font-size:1.3rem;
+		
+	}
+	.source{
+		font-size:1.3rem;
+		font-weight:lighter;
+		font-style: italic;
+	}
+	h2{
+	font-weight:lighter;
+	}
+}
+
+}
+
+button{
+	background-color: $color-background;
+    border: 2px solid $source-link;
+    border-radius: 3px;
+    color: $source-link;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+	padding: 1rem 5.25rem;
+	margin-top:50px;
+}
+
+
+
+
+
+
+}
+
+}
+
+
+
+
+
+
 @media(min-width:1080px){
 
 
@@ -16,12 +84,7 @@ width:1080px;
 margin:0 auto;
 }
 
-article{
 
-
-
-
-}
 
 .search-form{
 	display:flex;
@@ -151,6 +214,7 @@ button{
 .button-container{
 	text-align:left;
 	margin-left:214px;
+
 }
 
 
@@ -222,9 +286,8 @@ button{
 }
 }
 
-@media(min-width:620px){
-	background-color:red;
-}
+
+
 
 
 
