@@ -48,13 +48,7 @@ body {
 		  position: relative;
 		}
 		:before {
-		  color: $source-link;
-		  content: "\f10d";
-		  font-family: FontAwesome;
-		  left: -175px;
-		  position: absolute;
-		  top: 0;
-		  font-size: 125px;
+		@include before-button-position;
 		}
 		:after {
 		  color: $source-link;
@@ -66,24 +60,44 @@ body {
 		  font-size: 125px;
 		}
 	  }
-	  .entry-meta {
+	
+	}
+}
+	.entry-meta {
 		font-weight: none;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
 		width: 50%;
-		align-items: center;
-		.entry-title {
-
-		  font-weight: lighter;
-		  span {
-			margin-left: 10px;
-		  }
+		margin-right:110px;
+		margin-top:30px;
+		.entry-title{
+			display:inline;
+			font-weight: lighter;
+			color:$body-color;
+			font-size:$font-size-main;
+			font-weight:400;
+			span {
+			  margin-left: 10px;
+			}
+			
+	
+		}
+		.source{
+			// display:flex;
+			// align-items:center;
+			color:white;
+			font-size:$font-size-main;
+	
+	
+			
+			a{
+				text-decoration: none;
+				color:$source-link;
+				font-size:$font-size-main;
+				font-style:italic;
+			}
 		}
 	  }
-	}
 
-  }
+  
 
 
 
@@ -106,35 +120,7 @@ body {
 	}
 }
 
-.entry-meta{
-	display:flex;
-	h2{
 
-	
-		
-	}
-	.entry-title{
-		color:$body-color;
-		font-size:$font-size-main;
-		font-weight:400;
-
-	}
-	.source{
-		// display:flex;
-		// align-items:center;
-		color:white;
-		font-size:$font-size-main;
-
-
-		
-		a{
-			text-decoration: none;
-			color:$source-link;
-			font-size:$font-size-main;
-			font-style:italic;
-		}
-	}
-}
 
 
 
@@ -262,8 +248,8 @@ article, section{
 		left: 90px;
 		position: absolute;
 		top: 250px;
-
 		font-size: 125px;
+
 	  }
 	  :after {
 		color: $source-link;
@@ -278,17 +264,12 @@ article, section{
 }
 
 
-input{
-	width:300px;
-	height:32px;
-}
 
-.input-container{
-	margin-top:50px;
-	display:flex;
-	flex-direction:column;
-	input{
-		margin-top:10px;
-	}
-	
+
+
+
+@media only screen and (max-width: 1080px) {
+    body {
+        background-color: lightblue;
+    }
 }

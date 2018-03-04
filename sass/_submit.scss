@@ -1,0 +1,61 @@
+#submit-quote{
+	width:150px;
+    margin-top:30px;
+    background-color: $color-background;
+    border: 2px solid $source-link;
+    border-radius: 3px;
+    color: $source-link;
+    font-size: 1rem;
+    font-weight: normal;
+    
+
+
+
+   }
+   #submit-quote:hover{
+    @include hover-color-green;
+
+   }
+
+
+.input-container{
+	label{
+		color:$body-color;
+    }
+    
+  
+	input{
+		width:300px;
+		height:32px;
+    }
+    input:hover{
+        @include hover-color;
+
+    }
+    textarea:hover{
+        @include hover-color;
+        
+    }
+
+	margin-top:50px;
+	display:flex;
+	flex-direction:column;
+	input, textarea{
+	margin-top:10px;
+	background-color: $color-background;
+    border: 2px solid $source-link;
+    border-radius: 3px;
+    color: $source-link;
+
+	}
+	textarea{
+		width:600px
+	}
+	#quote-sourceurl{
+		margin-bottom:15px;
+	
+	}
+	
+
+	
+}

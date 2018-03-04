@@ -385,8 +385,8 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #006600;
-    color: #006600; }
+    color: #006600;
+    border-color: #006600; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -473,6 +473,51 @@ FOOTER
   .site-info p {
     margin-top: 0;
     margin-left: 10px; }
+
+#submit-quote {
+  width: 150px;
+  margin-top: 30px;
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: normal; }
+
+#submit-quote:hover {
+  color: #006600;
+  border-color: #006600; }
+
+.input-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .input-container label {
+    color: #fff; }
+  .input-container input {
+    width: 300px;
+    height: 32px; }
+  .input-container input:hover {
+    color: #006600;
+    border-color: #fff; }
+  .input-container textarea:hover {
+    color: #006600;
+    border-color: #fff; }
+  .input-container input, .input-container textarea {
+    margin-top: 10px;
+    background-color: #222;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    color: #0c0; }
+  .input-container textarea {
+    width: 600px; }
+  .input-container #quote-sourceurl {
+    margin-bottom: 15px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -689,42 +734,20 @@ body {
       position: absolute;
       top: 0;
       font-size: 125px; }
-  .home .post .entry-meta, .single-post .post .entry-meta, .page .post .entry-meta {
-    font-weight: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 50%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .home .post .entry-meta .entry-title, .single-post .post .entry-meta .entry-title, .page .post .entry-meta .entry-title {
-      font-weight: lighter; }
-      .home .post .entry-meta .entry-title span, .single-post .post .entry-meta .entry-title span, .page .post .entry-meta .entry-title span {
-        margin-left: 10px; }
-
-.entry-content {
-  width: 650px;
-  color: #fff; }
-  .entry-content p {
-    font-size: 2.5rem;
-    line-height: 1 1.5; }
 
 .entry-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  font-weight: none;
+  width: 50%;
+  margin-right: 110px;
+  margin-top: 30px; }
   .entry-meta .entry-title {
+    display: inline;
+    font-weight: lighter;
     color: #fff;
     font-size: 1.25rem;
     font-weight: 400; }
+    .entry-meta .entry-title span {
+      margin-left: 10px; }
   .entry-meta .source {
     color: white;
     font-size: 1.25rem; }
@@ -733,6 +756,13 @@ body {
       color: #0c0;
       font-size: 1.25rem;
       font-style: italic; }
+
+.entry-content {
+  width: 650px;
+  color: #fff; }
+  .entry-content p {
+    font-size: 2.5rem;
+    line-height: 1 1.5; }
 
 button {
   background-color: #222;
@@ -818,21 +848,9 @@ button {
   top: 250px;
   font-size: 125px; }
 
-input {
-  width: 300px;
-  height: 32px; }
-
-.input-container {
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .input-container input {
-    margin-top: 10px; }
+@media only screen and (max-width: 1080px) {
+  body {
+    background-color: lightblue; } }
 
 /*--------------------------------------------------------------
 # Media

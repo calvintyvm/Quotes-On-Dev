@@ -11,3 +11,31 @@
 	justify-content: center;
 	
 }
+
+@mixin before-button-position{
+	color: $source-link;
+	content: "\f10d";
+	font-family: FontAwesome;
+	left: -175px;
+	position: absolute;
+	top: 0;
+	font-size: 125px;
+}
+@mixin after-button-position{
+	color: $source-link;
+	content: "\f10e";
+    font-family: FontAwesome;
+	right: -130px;
+	position: absolute;
+    top: 0;
+    font-size: 125px;
+}
+
+@mixin hover-color{
+	color:$color__link-hover;
+    border-color:$body-color;
+}
+@mixin hover-color-green{
+	color:$color__link-hover;
+    border-color:$color__link-hover;
+}
