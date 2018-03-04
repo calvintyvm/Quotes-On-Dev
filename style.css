@@ -428,6 +428,12 @@ textarea {
 /*--------------------------------------------------------------
 HEADER 
 --------------------------------------------------------------*/
+.site-header {
+  margin-top: 2.5em; }
+  .site-header .logo {
+    width: 300px;
+    margin-left: 10px; }
+
 @media (min-width: 620px) {
   .site-header {
     margin-top: 2.5em; }
@@ -445,6 +451,50 @@ HEADER
 /*--------------------------------------------------------------
 FOOTER 
 --------------------------------------------------------------*/
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 100px;
+  width: 300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 20px; }
+  .site-info a {
+    text-decoration: none;
+    color: #0c0; }
+  .site-info p {
+    color: white; }
+  .site-info ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 300px;
+    margin: 0;
+    padding-left: 0; }
+    .site-info ul li {
+      padding-right: 10px;
+      border-right: 1px solid white; }
+  .site-info p {
+    margin-top: 10px;
+    margin-bottom: 0; }
+  .site-info .page-item-111 {
+    border: none; }
+
 @media (min-width: 620px) {
   .site-info {
     display: -webkit-box;
@@ -457,7 +507,8 @@ FOOTER
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: 100px;
-    width: 700px; }
+    width: 700px;
+    margin-left: 0px; }
     .site-info a {
       text-decoration: none;
       color: #0c0; }
@@ -476,7 +527,8 @@ FOOTER
           -ms-flex-pack: justify;
               justify-content: space-between;
       width: 300px;
-      margin: 0; }
+      margin: 0;
+      padding-left: 40px; }
       .site-info ul li {
         padding-right: 10px;
         border-right: 1px solid white; }
@@ -516,7 +568,8 @@ FOOTER
           -ms-flex-pack: justify;
               justify-content: space-between;
       width: 300px;
-      margin: 0 0 1.5rem 3rem; }
+      margin: 0 0 1.5rem 3rem;
+      padding-left: 40px; }
       .site-info ul li {
         padding-right: 10px;
         border-right: 1px solid white; }
@@ -570,11 +623,8 @@ FOOTER
       margin-bottom: 15px; } }
 
 article, section {
-  margin-top: 100px;
-  margin-left: 200px; }
-  article .site-main, section .site-main {
-    margin-left: 200px;
-    margin-top: 100px; }
+  margin-top: 50px;
+  margin-left: 20px; }
   article ul, section ul {
     list-style-type: none;
     font-size: 1.25rem;
@@ -607,6 +657,60 @@ article, section {
 .page-id-107 article {
   margin-left: 200px;
   margin-top: 50px; }
+
+@media (min-width: 620px) {
+  article ul, section ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+    margin-left: 0;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 950px;
+    line-height: 40px; }
+    article ul li, section ul li {
+      margin-right: 15px; } }
+
+@media (min-width: 1080px) {
+  article, section {
+    margin-top: 100px;
+    margin-left: 200px; }
+    article .site-main, section .site-main {
+      margin-left: 200px;
+      margin-top: 100px; }
+    article ul, section ul {
+      list-style-type: none;
+      font-size: 1.25rem;
+      margin-left: 0;
+      padding-left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 650px;
+      line-height: 40px; }
+      article ul li, section ul li {
+        margin-right: 15px; }
+    article h1, article h2, section h1, section h2 {
+      color: #fff; }
+    article a, section a {
+      text-decoration: none;
+      color: #0c0; }
+    article a:hover, section a:hover {
+      color: #006600;
+      border-color: #006600; }
+    article .entry-content p, section .entry-content p {
+      line-height: 1.5;
+      font-size: 1rem; }
+  .page-id-113 .site-main {
+    margin-left: 0px; }
+  .page-id-107 article {
+    margin-left: 200px;
+    margin-top: 50px; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -751,6 +855,30 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+body {
+  background-color: #222;
+  font-family: "Exo"; }
+  body article {
+    margin-left: 20px;
+    margin-top: 0; }
+    body article .entry-content p {
+      color: #fff;
+      font-weight: lighter;
+      font-size: 1.3rem; }
+    body article .entry-title {
+      font-weight: lighter;
+      display: inline; }
+
+button {
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 50px; }
+
 .button-container {
   margin-left: 50px; }
 

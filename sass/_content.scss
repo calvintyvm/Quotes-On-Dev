@@ -5,7 +5,39 @@
 /* Posts and pages */
 
 
+body{
+	background-color:$color-background;
+	font-family:"Exo";
+	article{
+		margin-left:20px;
+		margin-top:0;
+		.entry-content{
+			p{
+				color:$body-color;
+				font-weight:lighter;
+			font-size:1.3rem;
+			}
+		
+		}
+	.entry-title{
+		font-weight:lighter;
+		display:inline;
+	}
+	}
+}
 
+button{
+	background-color: $color-background;
+    border: 2px solid $source-link;
+    border-radius: 3px;
+    color: $source-link;
+    font-size: 1rem;
+    font-weight: 700;
+	line-height: 1;
+	margin-top:50px;
+	// padding: 1rem 5.25rem;
+
+}
 
 .button-container{
 	margin-left:50px;

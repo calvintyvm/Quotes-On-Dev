@@ -4,6 +4,64 @@
 FOOTER 
 --------------------------------------------------------------*/
 
+.site-info{
+
+
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	margin-top:100px;
+	width:300px;
+	flex-wrap:wrap;
+	margin-left:20px;
+	
+
+
+	a{
+		text-decoration: none;
+		color:#0c0;
+	}
+	p{
+		color:white;
+	}
+
+
+
+
+	ul{
+		list-style-type: none;
+		display:flex;
+		flex-direction:row;
+		justify-content: space-between;
+		width:300px;
+		margin:0;
+		padding-left:0;
+		
+
+		
+	
+		
+		li{
+			padding-right:10px;
+			border-right:1px solid white;
+			
+		}
+
+
+	}
+	
+p{
+	margin-top:10px;
+
+	margin-bottom:0;
+}
+
+.page-item-111{
+	border:none;
+}
+
+}
+
 @media(min-width:620px){
 
 	.site-info{
@@ -14,6 +72,7 @@ FOOTER
 		justify-content:flex-start;
 		margin-top:100px;
 		width:700px;
+		margin-left:0px;
 		
 	
 	
@@ -35,6 +94,7 @@ FOOTER
 			justify-content: space-between;
 			width:300px;
 			margin:0;
+			padding-left:40px;
 			
 		
 			
@@ -85,6 +145,7 @@ FOOTER
 		justify-content: space-between;
 		width:300px;
 		margin: 0 0 1.5rem 3rem;
+		padding-left:40px;
 	
 		
 		li{
