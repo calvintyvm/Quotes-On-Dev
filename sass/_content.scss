@@ -5,6 +5,11 @@
 /* Posts and pages */
 
 
+
+@media(min-width:1080px){
+
+
+
 .site{
 
 width:1080px;
@@ -215,14 +220,22 @@ button{
 	  }
   }
 }
-
-
-
-
-
-
-@media only screen and (max-width: 1080px) {
-    body {
-        background-color: lightblue;
-    }
 }
+
+@media(min-width:620px){
+	background-color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

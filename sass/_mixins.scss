@@ -39,3 +39,18 @@
 	color:$color__link-hover;
     border-color:$color__link-hover;
 }
+
+$desktop-width:1080px;
+$tablet-width:620px;
+
+@mixin desktop {
+	@media (min-width: $desktop-width) {
+	  @content;
+	}
+  }
+
+  @mixin tablet {
+	@media (min-width: $tablet-width) {
+	  @content;
+	}
+  }
