@@ -125,7 +125,7 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
       }
   }).done( function() {
     $('#quote-submission-form').hide('slow');
-    $('.entry-title').after('<p>' + api_vars_success+ '</p>');
+    $('.entry-title').after('<p>' + api_vars.success+ '</p>');
 
   })
   .fail(function(){

@@ -14,6 +14,7 @@ FOOTER
 	width:300px;
 	flex-wrap:wrap;
 	margin-left:20px;
+	font-weight:lighter;
 	
 
 
@@ -64,6 +65,10 @@ p{
 
 @media(min-width:620px){
 
+	
+
+	
+
 	.site-info{
 
 
@@ -112,11 +117,16 @@ p{
 		margin-left:10px;
 		margin-bottom:0;
 	}
-	}
+	.page-item-111{
+		border-right:1px solid white;
+	}	
+}
+	
 }
 
 
 @media(min-width:1080px){
+
 .site-info{
 
 
@@ -161,6 +171,10 @@ p{
 	margin-top:0;
 	margin-left:10px;
 	margin-bottom: 1.5rem;
+}
+
+.page-item-111{
+	border-right:1px solid white;
 }
 }
 }

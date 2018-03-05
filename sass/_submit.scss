@@ -1,3 +1,10 @@
+header{
+    p{
+        color:white;
+    }
+}
+
+
 #submit-quote{
 	width:150px;
     margin-top:30px;
@@ -7,7 +14,7 @@
     color: $source-link;
     font-size: 1rem;
     font-weight: normal;
-    font-family:"Exo"
+    font-family:$font_body;
     
 
 
@@ -140,7 +147,7 @@
 
 
 @media(min-width:1080px){
-
+.page-id-111{
     header{
 
     
@@ -172,6 +179,7 @@
         
     }
     
+}
 
 #submit-quote{
 	width:150px;

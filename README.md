@@ -1,23 +1,28 @@
-# Quotes on Dev Starter
+# Quotes on Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+A WordPress site that fetches Developer quotes from a api and is displayed
+on the screen everytime the button is clicked.
 
-## Installation
+![QOD](https://gyazo.com/cd63375f190738d5632d9d08e9220a72)
 
-### 1. Download me (don't clone me!)
 
-Then add me to your `wp-content/themes` directory.
 
-### 2. Rename the `quotesondev-starter-master` directory
+## What was used for this project
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+Javascript, Jquery, SASS, CSS, HTML and PHP
 
-### 3. Install the dev dependencies
+## What was troubling for me
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+What was troubling for me was getting the javascript and jquery working. The submit button was easy but
+I had a small typo in the submit page which gave me this error
 
-### 4. Update the proxy in `gulpfile.js`
+![Error](https://gyazo.com/0ab2372958d087153841f005e75d2b63)'
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+But it was because in my data, I gave the variables a different name and thus the system could not find it in the php
+files as I've declared the variables there. After I found that error, I changed it and it worked.
 
-And now would be a good time to `git init` :)
+## Others
+For this project I also tried to take advantage of SASS as I did not in inhabitent. With it, I quickly found the true use of SASS and how easy it is to change things if you want to in the future. 
+
+
+
