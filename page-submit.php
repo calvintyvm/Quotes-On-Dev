@@ -24,6 +24,7 @@ get_header(); ?>
 
 
         <form name ="quoteForm" id="quote-submission-form">
+            <div class="quote-submit-wrapper">
         
           <div class ="input-container">
             <label for="quote-author">Author of Quote </label>
@@ -43,7 +44,7 @@ get_header(); ?>
         </div>
          
         <input type="submit" id="submit-quote" value="Submit Quote">
-
+        </div>
         
         </form>
 

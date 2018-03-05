@@ -98,4 +98,50 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
   // before send nonce authentication, it's in the slides from wp ajax lesson
 
 
+ 
+
+  
+
+
+
+
+
+
+  $('#submit-quote').on('click', function(e){
+    e.preventDefault();
+    var data = {
+      title:$('#quote-author').val(),
+      content:$('textarea#quote-content').val(),
+      _qod_quote_source:$('#quote-source').val(),
+      _qod_quote_source_url:$('#quote-source').val(),
+    }
+
+
+
+
+ $.ajax({
+      method: 'post',
+      url: api_vars.root_url + "wp/v2/posts/",
+      data:data,
+      beforeSend: function (xhr) {
+          xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
+      }
+  }).done( function() {
+    $('#quote-submission-form').hide('slow');
+    $('.entry-title').after('<p>' + api_vars_success+ '</p>');
+
+  })
+  .fail(function(){
+    $('#quote-submission-form').hide('slow');
+    $('.entry-title').after('<p>' + api_vars.failure + '</p>');
+  })
+
+});
+
+
+
+
+
+
+
 })(jQuery);
