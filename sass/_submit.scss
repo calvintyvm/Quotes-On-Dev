@@ -1,6 +1,177 @@
+#submit-quote{
+	width:150px;
+    margin-top:30px;
+    background-color: $color-background;
+    border: 2px solid $source-link;
+    border-radius: 3px;
+    color: $source-link;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family:"Exo"
+    
 
 
-@include desktop{
+
+   }
+   #submit-quote:hover{
+    @include hover-color-green;
+
+   }
+
+
+.input-container{
+	label{
+		color:$body-color;
+    }
+    
+  
+	input{
+		width:300px;
+		height:32px;
+    }
+    input:hover{
+        @include hover-color;
+
+    }
+    textarea:hover{
+        @include hover-color;
+        
+    }
+
+	margin-top:50px;
+	display:flex;
+	flex-direction:column;
+	input, textarea{
+	margin-top:10px;
+	background-color: $color-background;
+    border: 2px solid $source-link;
+    border-radius: 3px;
+    color: $source-link;
+
+	}
+	textarea{
+		width:300px
+	}
+	#quote-sourceurl{
+		margin-bottom:15px;
+	
+	}
+	
+
+	
+}
+
+
+
+@media (min-width:620px){
+    #submit-quote{
+        width:150px;
+        margin-top:30px;
+        background-color: $color-background;
+        border: 2px solid $source-link;
+        border-radius: 3px;
+        color: $source-link;
+        font-size: 1rem;
+        font-weight: normal;
+        
+    
+    
+    
+       }
+       #submit-quote:hover{
+        @include hover-color-green;
+    
+       }
+    
+    
+    .input-container{
+        label{
+            color:$body-color;
+        }
+        
+      
+        input{
+            width:300px;
+            height:32px;
+        }
+        input:hover{
+            @include hover-color;
+    
+        }
+        textarea:hover{
+            @include hover-color;
+            
+        }
+    
+        margin-top:50px;
+        display:flex;
+        flex-direction:column;
+        input, textarea{
+        margin-top:10px;
+        background-color: $color-background;
+        border: 2px solid $source-link;
+        border-radius: 3px;
+        color: $source-link;
+    
+        }
+        textarea{
+            width:600px
+        }
+        #quote-sourceurl{
+            margin-bottom:15px;
+        
+        }
+        
+    
+        
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(min-width:1080px){
+
+    header{
+
+    
+
+
+
+            :before {
+                color: $source-link;
+                content: "\f10d";
+                font-family: FontAwesome;
+                left: 90px;
+                position: absolute;
+                top: 250px;
+                font-size: 125px;
+        
+              }
+              :after {
+                color: $source-link;
+                content: "\f10e";
+                font-family: FontAwesome;
+                right: 110px;
+                position: absolute;
+                top: 250px;
+                font-size: 125px;
+              }
+        
+        
+        
+        
+    }
+    
 
 #submit-quote{
 	width:150px;
@@ -63,4 +234,5 @@
 
 	
 }
+
 }

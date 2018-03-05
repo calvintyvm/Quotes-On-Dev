@@ -528,7 +528,7 @@ FOOTER
               justify-content: space-between;
       width: 300px;
       margin: 0;
-      padding-left: 40px; }
+      padding-left: 20px; }
       .site-info ul li {
         padding-right: 10px;
         border-right: 1px solid white; }
@@ -568,7 +568,7 @@ FOOTER
           -ms-flex-pack: justify;
               justify-content: space-between;
       width: 300px;
-      margin: 0 0 1.5rem 3rem;
+      margin: 0 0 1.5rem 2rem;
       padding-left: 40px; }
       .site-info ul li {
         padding-right: 10px;
@@ -578,7 +578,113 @@ FOOTER
       margin-left: 10px;
       margin-bottom: 1.5rem; } }
 
+#submit-quote {
+  width: 150px;
+  margin-top: 30px;
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "Exo"; }
+
+#submit-quote:hover {
+  color: #006600;
+  border-color: #006600; }
+
+.input-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .input-container label {
+    color: #fff; }
+  .input-container input {
+    width: 300px;
+    height: 32px; }
+  .input-container input:hover {
+    color: #006600;
+    border-color: #fff; }
+  .input-container textarea:hover {
+    color: #006600;
+    border-color: #fff; }
+  .input-container input, .input-container textarea {
+    margin-top: 10px;
+    background-color: #222;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    color: #0c0; }
+  .input-container textarea {
+    width: 300px; }
+  .input-container #quote-sourceurl {
+    margin-bottom: 15px; }
+
+@media (min-width: 620px) {
+  #submit-quote {
+    width: 150px;
+    margin-top: 30px;
+    background-color: #222;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    color: #0c0;
+    font-size: 1rem;
+    font-weight: normal; }
+  #submit-quote:hover {
+    color: #006600;
+    border-color: #006600; }
+  .input-container {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .input-container label {
+      color: #fff; }
+    .input-container input {
+      width: 300px;
+      height: 32px; }
+    .input-container input:hover {
+      color: #006600;
+      border-color: #fff; }
+    .input-container textarea:hover {
+      color: #006600;
+      border-color: #fff; }
+    .input-container input, .input-container textarea {
+      margin-top: 10px;
+      background-color: #222;
+      border: 2px solid #0c0;
+      border-radius: 3px;
+      color: #0c0; }
+    .input-container textarea {
+      width: 600px; }
+    .input-container #quote-sourceurl {
+      margin-bottom: 15px; } }
+
 @media (min-width: 1080px) {
+  header :before {
+    color: #0c0;
+    content: "\f10d";
+    font-family: FontAwesome;
+    left: 90px;
+    position: absolute;
+    top: 250px;
+    font-size: 125px; }
+  header :after {
+    color: #0c0;
+    content: "\f10e";
+    font-family: FontAwesome;
+    right: 110px;
+    position: absolute;
+    top: 250px;
+    font-size: 125px; }
   #submit-quote {
     width: 150px;
     margin-top: 30px;

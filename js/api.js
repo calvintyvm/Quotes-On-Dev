@@ -116,9 +116,6 @@ $( '#new-quote-button' ).on( 'click', function ( s ) {
       _qod_quote_source_url:$('#quote-source').val(),
     }
 
-
-
-
  $.ajax({
       method: 'post',
       url: api_vars.root_url + "wp/v2/posts/",
